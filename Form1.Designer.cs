@@ -35,26 +35,27 @@
             this.checkboxActive = new System.Windows.Forms.CheckBox();
             this.options = new System.Windows.Forms.GroupBox();
             this.general = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.information = new System.Windows.Forms.GroupBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.options.SuspendLayout();
             this.general.SuspendLayout();
             this.information.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // check
             // 
-            this.check.Location = new System.Drawing.Point(6, 19);
+            this.check.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.check.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.check.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.check.Location = new System.Drawing.Point(9, 29);
+            this.check.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.check.Name = "check";
-            this.check.Size = new System.Drawing.Size(230, 23);
+            this.check.Size = new System.Drawing.Size(445, 35);
             this.check.TabIndex = 0;
             this.check.Text = "get id";
             this.check.UseVisualStyleBackColor = true;
@@ -65,9 +66,11 @@
             this.checkboxActive.AutoSize = true;
             this.checkboxActive.Checked = true;
             this.checkboxActive.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkboxActive.Location = new System.Drawing.Point(6, 19);
+            this.checkboxActive.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.checkboxActive.Location = new System.Drawing.Point(9, 29);
+            this.checkboxActive.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkboxActive.Name = "checkboxActive";
-            this.checkboxActive.Size = new System.Drawing.Size(55, 17);
+            this.checkboxActive.Size = new System.Drawing.Size(69, 24);
             this.checkboxActive.TabIndex = 1;
             this.checkboxActive.Text = "active";
             this.checkboxActive.UseVisualStyleBackColor = true;
@@ -75,9 +78,11 @@
             // options
             // 
             this.options.Controls.Add(this.check);
-            this.options.Location = new System.Drawing.Point(6, 118);
+            this.options.Location = new System.Drawing.Point(9, 182);
+            this.options.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.options.Name = "options";
-            this.options.Size = new System.Drawing.Size(242, 56);
+            this.options.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.options.Size = new System.Drawing.Size(462, 86);
             this.options.TabIndex = 2;
             this.options.TabStop = false;
             this.options.Text = "options";
@@ -87,117 +92,122 @@
             this.general.Controls.Add(this.checkBox3);
             this.general.Controls.Add(this.checkBox2);
             this.general.Controls.Add(this.checkboxActive);
-            this.general.Location = new System.Drawing.Point(6, 12);
+            this.general.Location = new System.Drawing.Point(9, 18);
+            this.general.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.general.Name = "general";
-            this.general.Size = new System.Drawing.Size(242, 100);
+            this.general.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.general.Size = new System.Drawing.Size(363, 154);
             this.general.TabIndex = 3;
             this.general.TabStop = false;
             this.general.Text = "general";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(9, 439);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(98, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "github.com/snoopti";
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(6, 42);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(91, 17);
-            this.checkBox2.TabIndex = 2;
-            this.checkBox2.Text = "always on top";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
-            // 
             // checkBox3
             // 
             this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(6, 65);
+            this.checkBox3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.checkBox3.Location = new System.Drawing.Point(9, 97);
+            this.checkBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(68, 17);
+            this.checkBox3.Size = new System.Drawing.Size(92, 24);
             this.checkBox3.TabIndex = 3;
             this.checkBox3.Text = "auto size";
             this.checkBox3.UseVisualStyleBackColor = true;
             this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
             // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.checkBox2.Location = new System.Drawing.Point(9, 63);
+            this.checkBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(124, 24);
+            this.checkBox2.TabIndex = 2;
+            this.checkBox2.Text = "always on top";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
+            // 
             // information
             // 
-            this.information.Controls.Add(this.groupBox2);
-            this.information.Controls.Add(this.groupBox1);
-            this.information.Location = new System.Drawing.Point(254, 12);
+            this.information.Controls.Add(this.pictureBox1);
+            this.information.Location = new System.Drawing.Point(9, 278);
+            this.information.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.information.Name = "information";
-            this.information.Size = new System.Drawing.Size(218, 206);
+            this.information.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.information.Size = new System.Drawing.Size(462, 169);
             this.information.TabIndex = 4;
             this.information.TabStop = false;
             this.information.Text = "information";
             // 
-            // groupBox1
+            // linkLabel1
             // 
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(7, 20);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(97, 170);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "note";
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.LinkColor = System.Drawing.Color.RoyalBlue;
+            this.linkLabel1.Location = new System.Drawing.Point(408, 51);
+            this.linkLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(63, 20);
+            this.linkLabel1.TabIndex = 5;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Discord";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
-            // groupBox2
+            // linkLabel2
             // 
-            this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Location = new System.Drawing.Point(110, 20);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(97, 170);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "key";
+            this.linkLabel2.AutoSize = true;
+            this.linkLabel2.LinkColor = System.Drawing.Color.RoyalBlue;
+            this.linkLabel2.Location = new System.Drawing.Point(414, 18);
+            this.linkLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.linkLabel2.Name = "linkLabel2";
+            this.linkLabel2.Size = new System.Drawing.Size(57, 20);
+            this.linkLabel2.TabIndex = 6;
+            this.linkLabel2.TabStop = true;
+            this.linkLabel2.Text = "Github";
+            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
-            // label2
+            // pictureBox1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 16);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(20, 13);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "C4";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 16);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(38, 13);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "SHIFT";
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Image = global::MidiCraft.Properties.Resources.keybinds;
+            this.pictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
+            this.pictureBox1.Location = new System.Drawing.Point(9, 29);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(445, 130);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Form
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.LightSteelBlue;
             this.ClientSize = new System.Drawing.Size(484, 461);
+            this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.linkLabel2);
             this.Controls.Add(this.information);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.general);
             this.Controls.Add(this.options);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(500, 500);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(500, 500);
             this.Name = "Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "MidiConverter | by snoopti";
+            this.Text = "MidiCraft | by snoopti";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.options.ResumeLayout(false);
             this.general.ResumeLayout(false);
             this.general.PerformLayout();
             this.information.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -209,14 +219,12 @@
         private System.Windows.Forms.CheckBox checkboxActive;
         private System.Windows.Forms.GroupBox options;
         private System.Windows.Forms.GroupBox general;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.GroupBox information;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.LinkLabel linkLabel2;
     }
 }
 

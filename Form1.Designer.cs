@@ -41,10 +41,13 @@
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.options.SuspendLayout();
             this.general.SuspendLayout();
             this.information.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // check
@@ -57,7 +60,7 @@
             this.check.Name = "check";
             this.check.Size = new System.Drawing.Size(445, 35);
             this.check.TabIndex = 0;
-            this.check.Text = "get id";
+            this.check.Text = "click and press note";
             this.check.UseVisualStyleBackColor = true;
             this.check.Click += new System.EventHandler(this.check_Click);
             // 
@@ -85,7 +88,7 @@
             this.options.Size = new System.Drawing.Size(462, 86);
             this.options.TabIndex = 2;
             this.options.TabStop = false;
-            this.options.Text = "options";
+            this.options.Text = "debug";
             // 
             // general
             // 
@@ -96,7 +99,7 @@
             this.general.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.general.Name = "general";
             this.general.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.general.Size = new System.Drawing.Size(363, 154);
+            this.general.Size = new System.Drawing.Size(215, 154);
             this.general.TabIndex = 3;
             this.general.TabStop = false;
             this.general.Text = "general";
@@ -143,7 +146,7 @@
             // 
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.LinkColor = System.Drawing.Color.RoyalBlue;
-            this.linkLabel1.Location = new System.Drawing.Point(408, 51);
+            this.linkLabel1.Location = new System.Drawing.Point(72, 97);
             this.linkLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(63, 20);
@@ -156,7 +159,7 @@
             // 
             this.linkLabel2.AutoSize = true;
             this.linkLabel2.LinkColor = System.Drawing.Color.RoyalBlue;
-            this.linkLabel2.Location = new System.Drawing.Point(414, 18);
+            this.linkLabel2.Location = new System.Drawing.Point(7, 97);
             this.linkLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel2.Name = "linkLabel2";
             this.linkLabel2.Size = new System.Drawing.Size(57, 20);
@@ -180,6 +183,28 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.linkLabel1);
+            this.groupBox1.Controls.Add(this.linkLabel2);
+            this.groupBox1.Location = new System.Drawing.Point(231, 18);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(176, 154);
+            this.groupBox1.TabIndex = 7;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "about";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(7, 121);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(141, 20);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "by snoopti | Jonas ";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
             // Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -187,8 +212,7 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.LightSteelBlue;
             this.ClientSize = new System.Drawing.Size(484, 461);
-            this.Controls.Add(this.linkLabel1);
-            this.Controls.Add(this.linkLabel2);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.information);
             this.Controls.Add(this.general);
             this.Controls.Add(this.options);
@@ -208,8 +232,9 @@
             this.general.PerformLayout();
             this.information.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -225,6 +250,8 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.LinkLabel linkLabel2;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label1;
     }
 }
 

@@ -128,7 +128,7 @@ namespace MidiConverter
                     return (true, MOUSE_DOWN);
                 case 65: // F5
                     return (true, MOUSE_RIGHT);
-                //scrolln:
+                //scrolling:
                 // G#5:68 up wheel_scrolling once
                 // F#5:66 down wheel_scrolling once
                 default:
@@ -179,7 +179,7 @@ namespace MidiConverter
 
         private async void MoveMouseContinuously()
         {
-            const int moveAmount = 15;
+            const int moveAmount = 20;
             while (isMouseMoving)
             {
                 switch (currentMouseDirection)
